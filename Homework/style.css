@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(30, 94, 197);
+    margin-bottom: .3em;
+    text-decoration: underline;
+  }
+
+  label {
+      display: table-cell;
+      
+  }
+
+  
