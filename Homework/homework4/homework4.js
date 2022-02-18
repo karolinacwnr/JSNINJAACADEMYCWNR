@@ -47,8 +47,26 @@ function renderOrderList() {
 
     for (let i = 0; i < orderList.length; i++) {
         const productElement = document.createElement('li');
+
+        //Dodanie buttona Delete do i-tego elementu
+        
+        const deleteButton = document.createElement('button');
+        deleteButton.innerText = 'Remove';
+
+
         productElement.innerText = `${orderList[i].name} x ${orderList[i].amount}`;
+
+        productElement.appendChild(deleteButton);
+
+        deleteButton.addEventListener('click', () => {
+            orderList.splice(i, 1);
+            renderOrderList()
+        });
+
+
         orderListElement.appendChild(productElement);
+
+
 
         //Zadanie domowe: jeśli cena * ilośc mieści się w budżecie, to pokoloruj na zielono, jeśli nie, to na czerwono
         if (
