@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="lista-produktow.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .prices {
+            width: 300px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h2>Lista produktow</h2>
+    <hr>
+    <div class="prices">
+       Product list:
+        <ul id="productList">
+        </ul>
+    </div>
+    <form action="">
+        
+        <label for="">Product name</label><br>
+        <input type="text" id="productName">
+        <br>
+
+        <label for="">Product price</label><br>
+        <input type="text" id="productPrice">
+        <br>
+        
+        <button type="submit" id="addToList">Add to list</button>
+    </form>
+
+    <script src="lista-produktow.js"></script>
+</body>
+</html>

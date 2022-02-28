@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="lista-zakupow.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .prices {
+            width: 300px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h2>Lista zakupow</h2>
+    <hr>
+    <div class="prices">
+        Prices:
+        <ul id="priceList">
+            <li>
+                <span>Milk</span> <span>1</span>
+            </li>
+        </ul>
+    </div>
+    <form action="">
+        
+        <label for="">Product name </label><br>
+        <select id="productNameDropdown">
+            <option selected></option>
+        </select>
+        <br>
+
+        <label for="">Product amount</label><br>
+        <input type="text" id="productAmount">
+        <br>
+        <label for="">Our budget</label><br>
+        <input type="text" id="productMaxPrice">
+        <br>
+        <br>
+        <button type="submit" id="myBtn">Add to cart</button>
+    </form>
+    <ol id="productsList">
+        <li>
+            <span>Milk</span> x <span>3</span> 
+        </li>
+    </ol>
+
+    <script src="lista-zakupow.js"></script>
+</body>
+</html>
